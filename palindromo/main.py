@@ -1,0 +1,27 @@
+def analizar_caracteres():
+    print("                                   ")
+    palavra = input("Digite uma palavra: ")
+    print("                                   ")
+    print("===================================")
+    palavra = palavra.replace(" ", "")
+    palavra = palavra.replace(",", "")
+    palavra = palavra.replace(".", "")
+    palavra = palavra.replace("!", "")
+    palavra = palavra.replace("?", "")
+    palavra = palavra.replace(":", "")
+    palavra = palavra.replace("...", "")
+    palavra = palavra.replace("-", "")
+    palavra = palavra.lower()
+    palavra_invertida = ''.join(reversed(palavra))
+    if palavra_invertida == palavra:
+        print("                                   ")
+        print("A palavra {} é um palindromo" .format(palavra))
+        print("                                   ")
+        print("===================================")
+    else:
+        print("                                   ")
+        print("A palavra {} não é um palindromo" .format(palavra))
+        print("                                   ")
+        print("===================================")
+
+analizar_caracteres()

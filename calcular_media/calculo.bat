@@ -1,0 +1,2 @@
+python calculo.py
+pause
